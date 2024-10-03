@@ -1,4 +1,5 @@
 import type { Metadata } from 'next'
+import { Analytics } from '@vercel/analytics/react'
 import { Inter as FontSans } from 'next/font/google'
 import Navbar from '../components/navbar'
 import { ThemeProvider } from '../components/theme-provider'
@@ -67,6 +68,7 @@ export default function RootLayout({
                   <Navbar />
                </TooltipProvider>
             </ThemeProvider>
+            <Analytics />
          </body>
       </html>
    )
