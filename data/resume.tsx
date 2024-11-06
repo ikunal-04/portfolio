@@ -66,18 +66,6 @@ export const DATA = {
 
    work: [
       {
-         company: 'BizOAlly',
-         href: '',
-         badges: [],
-         location: 'Remote',
-         title: 'Frontend Engineer',
-         logoUrl: '/bizoally_logo.jpeg',
-         start: 'Apr 2024',
-         end: 'May 2024',
-         description:
-        'Developed a user-friendly web application using React.js, Redux, and TailwindCSS, improving UI/UX design and increasing user engagement by 20%.',
-      },
-      {
          company: 'Freelance',
          href: '',
          badges: [],
@@ -88,6 +76,18 @@ export const DATA = {
          end: 'Present',
          description:
         'Created and deployed multiple full-stack applications, improving client satisfaction by 30% and delivering low-level design solutions for enhanced efficiency.',
+      },
+      {
+         company: 'BizOAlly',
+         href: '',
+         badges: [],
+         location: 'Remote',
+         title: 'Frontend Engineer',
+         logoUrl: '/bizoally_logo.jpeg',
+         start: 'Apr 2024',
+         end: 'May 2024',
+         description:
+        'Developed a user-friendly web application using React.js, Redux, and TailwindCSS, improving UI/UX design and increasing user engagement by 20%.',
       },
    ],
    education: [
@@ -106,7 +106,7 @@ export const DATA = {
          href: 'https://ao-vest.ar-io.net/',
          image: '/aovest.jpeg',
          dates: 'May 2024 - Present',
-         active: true,
+         active: false,
          description:
         'Developed a vesting application for managing token vesting within the Arweave ecosystem, improving transaction efficiency with AOS and cron jobs.',
          technologies: [
@@ -116,6 +116,70 @@ export const DATA = {
             'TailwindCSS',
             'Zustand',
             'React Hook Form',
+         ],
+      },
+      {
+         title: 'EaseMyExpo - Freelance Project',
+         href: 'https://easemyexpo.com/',
+         image: '/easemyexpo.png',
+         dates: 'September 2024',
+         active: true,
+         description:
+        'Developed a fully dynamic website for EaseMyExpo using TypeScript, ReactJS, and TailwindCSS, facilitating 50+ custom stall designs and event services.',
+         technologies: [
+            'TypeScript',
+            'React.js',
+            'MongoDB',
+            'Node.js',
+            'Express.js',
+            'TailwindCSS',
+         ],
+      },
+      {
+         title: 'aoYield',
+         href: 'https://aoyield.vercel.app/',
+         image: '/aoyield.png',
+         dates: 'October 2024',
+         active: false,
+         description:
+        'Developed a decentralized yield farming platform using AO Protocol and React/TypeScript, enabling users to stake tokens and earn yields with automated distribution, resulting in a 100% success rate in transaction processing.',
+         technologies: [
+            'Lua',
+            'AOS',
+            'React.js',
+            'TailwindCSS',
+            'React Hook Form',
+         ],
+      },
+      {
+         title: 'Portfolio',
+         href: 'https://kgarg.vercel.app/',
+         image: '/portfolio.png',
+         dates: 'October 2024',
+         active: true,
+         description:
+        'Developed a personal portfolio website using Next.js, TypeScript, TailwindCSS, and Framer Motion, showcasing projects and skills.',
+         technologies: [
+            'Next.js',
+            'TypeScript',
+            'TailwindCSS',
+            'Framer Motion',
+         ],
+      },
+      {
+         title: 'Arweave Twitter',
+         href: 'https://arweave-twt.vercel.app/',
+         image: '/arweavetwt.png',
+         dates: 'Jul 2023 - Aug 2023',
+         active: true,
+         description:
+        'Created a Twitter-like application on the Arweave ecosystem, enhancing user interaction through an interactive frontend built with React.js.',
+         technologies: [
+            'React.js',
+            'AOS',
+            'Lua',
+            'TailwindCSS',
+            'ShadcnUI',
          ],
       },
       {
@@ -133,22 +197,6 @@ export const DATA = {
             'Express.js',
             'TailwindCSS',
             'JWT',
-         ],
-      },
-      {
-         title: 'Arweave Twitter',
-         href: 'https://arweave-twt.vercel.app/',
-         image: '/arweavetwt.png',
-         dates: 'Jul 2023 - Aug 2023',
-         active: true,
-         description:
-        'Created a Twitter-like application on the Arweave ecosystem, enhancing user interaction through an interactive frontend built with React.js.',
-         technologies: [
-            'React.js',
-            'AOS',
-            'Lua',
-            'TailwindCSS',
-            'ShadcnUI',
          ],
       },
    ],
