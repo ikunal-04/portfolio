@@ -105,7 +105,7 @@ export const DATA = {
          title: 'aoVest',
          href: 'https://ao-vest.ar-io.net/',
          image: '/aovest.jpeg',
-         dates: 'May 2024 - Present',
+         dates: 'May 2024 - July 2024',
          active: false,
          description:
         'Developed a vesting application for managing token vesting within the Arweave ecosystem, improving transaction efficiency with AOS and cron jobs.',
@@ -139,7 +139,7 @@ export const DATA = {
          title: 'aoYield',
          href: 'https://aoyield.vercel.app/',
          image: '/aoyield.png',
-         dates: 'October 2024',
+         dates: 'October 2024 - Present',
          active: false,
          description:
         'Developed a decentralized yield farming platform using AO Protocol and React/TypeScript, enabling users to stake tokens and earn yields with automated distribution, resulting in a 100% success rate in transaction processing.',
@@ -149,6 +149,24 @@ export const DATA = {
             'React.js',
             'TailwindCSS',
             'React Hook Form',
+         ],
+      },
+      {
+         title: 'arlink',
+         href: 'https://arlink.ar-io.dev/',
+         image: '/arlink.png',
+         dates: 'August 2024 - September 2024',
+         active: false,
+         description:
+        'Developed a decentralized platform for deploying static websites on Arweave, enabling users to create and share links with a custom domain. \n\n'
+        + 'I\'ve integrated github integration to allow users to deploy their websites with a single click from their github repositories.',
+         technologies: [
+            'TypeScript',
+            'Lua',
+            'AOS',
+            'Next.js',
+            'TailwindCSS',
+            'Zustand',
          ],
       },
       {
