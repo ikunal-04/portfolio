@@ -45,7 +45,11 @@ function Navigation() {
                         rel="noopener noreferrer">
                             Resume
                         </NavbarButton>
-                        <NavbarButton variant="primary">Get in touch</NavbarButton>
+                        <NavbarButton 
+                        href="mailto:kunalgarg054@gmail.com?subject=Let's%20Collaborate%20or%20Connect!&body=Hey%20Kunal%2C%0A%0AI%20came%20across%20your%20portfolio%20and%20I'd%20love%20to%20connect%20or%20discuss%20a%20project%20idea.%0A%0ALooking%20forward%20to%20hearing%20from%20you!"
+                        variant="primary">
+                            Get in touch
+                        </NavbarButton>
                     </div>
                 </NavBody>
 
@@ -88,6 +92,7 @@ function Navigation() {
                                 onClick={() => setIsMobileMenuOpen(false)}
                                 variant="primary"
                                 className="w-full"
+                                href="mailto:kunalgarg054@gmail.com?subject=Let's%20Collaborate%20or%20Connect!&body=Hey%20Kunal%2C%0A%0AI%20came%20across%20your%20portfolio%20and%20I'd%20love%20to%20connect%20or%20discuss%20a%20project%20idea.%0A%0ALooking%20forward%20to%20hearing%20from%20you!"
                             >
                                 Get in touch
                             </NavbarButton>

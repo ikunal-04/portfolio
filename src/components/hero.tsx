@@ -1,10 +1,11 @@
 "use client"
 import React from 'react';
 import Image from 'next/image';
+// import Link from 'next/link';
 import { Separator } from '@/components/ui/separator';
 import { NavbarButton } from '@/components/ui/resizable-navbar';
 import { IconBrandGithub, IconBrandX } from '@tabler/icons-react';
-import { Mail } from 'lucide-react';
+// import { Mail } from 'lucide-react';
 
 const Hero = () => {
   return (
@@ -53,19 +54,23 @@ const Hero = () => {
             >
               <IconBrandX className="w-5 h-5" />
             </a>
-            <a
-              href="mailto:kunalgarg054@gmail.com"
+            {/* <Link
+              href="mailto:kunalgarg054@gmail.com?subject=Let's%20Collaborate%20or%20Connect!&body=Hey%20Kunal%2C%0A%0AI%20came%20across%20your%20portfolio%20and%20I'd%20love%20to%20connect%20or%20discuss%20a%20project%20idea.%0A%0ALooking%20forward%20to%20hearing%20from%20you!"
               className="text-white/60 hover:text-primary transition-colors"
               aria-label="Email"
             >
               <Mail className="w-5 h-5" />
-            </a>
+            </Link> */}
           </div>
           <p
             className="flex items-center justify-end gap-2 text-white/90 hover:text-white transition-colors opacity-0 animate-fade-in"
             style={{ animationDelay: '0.6s', animationFillMode: 'forwards' }}
           >
-            <NavbarButton>Get in touch</NavbarButton>
+            <NavbarButton
+              href="mailto:kunalgarg054@gmail.com?subject=Let's%20Collaborate%20or%20Connect!&body=Hey%20Kunal%2C%0A%0AI%20came%20across%20your%20portfolio%20and%20I'd%20love%20to%20connect%20or%20discuss%20a%20project%20idea.%0A%0ALooking%20forward%20to%20hearing%20from%20you!"
+            >
+              Get in touch
+            </NavbarButton>
           </p>
         </div>
       </div>

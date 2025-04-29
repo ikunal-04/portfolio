@@ -6,7 +6,7 @@ import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 type Project = {
   title: string;
   description: string;
-  type: 'web3' | 'traditional';
+  type: ('web3' | 'traditional')[];
   link: string;
   github?: string;
   technologies: string[];
@@ -16,18 +16,41 @@ const projects: Project[] = [
   {
     title: "aoVest",
     description: "Vesting app for token management on Arweave, featuring automated token transfers and modular UI for rapid updates.",
-    type: "web3",
+    type: ["web3"],
     link: "https://ao-vest.ar-io.net/",
+    github: "https://github.com/ikunal-04/aovest",
     technologies: ["TypeScript", "Lua", "AOS", "React.js", "TailwindCSS", "Zustand"]
   },
   {
     title: "EaseMyExpo",
     description: "Fully dynamic website for EaseMyExpo with 50+ custom stall designs and event management services.",
-    type: "traditional",
+    type: ["traditional"],
     link: "https://easemyexpo.com/",
     technologies: ["TypeScript", "React.js", "MongoDB", "Node.js", "Express.js", "TailwindCSS"]
-  }
-  // Optional: If you want to add the portfolio project (commented out in your resume), let me know!
+  },
+  {
+    title: "CryptoBasket",
+    description: "Comprehensive crypto finance platform featuring a user dashboard for portfolio tracking and management.",
+    type: ["web3", "traditional"],
+    link: "https://basket-finance-landing-page.vercel.app/",
+    technologies: ["Next.js", "TypeScript", "TailwindCSS", "Node.js", "Express.js", "MongoDB"]
+  },
+  {
+    title: "OnchainAura",
+    description: "A full-stack application that analyzes users' onchain activities to generate personalized Aura scores, integrating smart contracts and backend services for comprehensive analytics.",
+    type: ["web3"],
+    link: "https://www.onchainaura.fun/",
+    github: "https://github.com/ikunal-04/aura",
+    technologies: ["Next.js", "TypeScript", "TailwindCSS", "Solidity", "Hardhat", "Ethers.js", "Node.js", "Express.js"]
+  },
+  {
+    title: "ResolutionDAO",
+    description: "End-to-end decentralized autonomous organization platform enabling users to create and vote on proposals, with integrated smart contracts and a user-friendly interface.",
+    type: ["web3"],
+    link: "https://resolutiondao.vercel.app/",
+    github: "https://github.com/ikunal-04/holiday-hackathon",
+    technologies: ["Next.js", "TypeScript", "TailwindCSS", "Solidity", "Hardhat", "Ethers.js"]
+  },
 ];
 
 const Projects = () => {
@@ -50,11 +73,11 @@ const Projects = () => {
           </TabsContent>
           
           <TabsContent value="web3" className="mt-6">
-            <ProjectGrid projects={projects.filter(p => p.type === 'web3')} />
+          <ProjectGrid projects={projects.filter(p => p.type.includes('web3'))} />
           </TabsContent>
           
           <TabsContent value="traditional" className="mt-6">
-            <ProjectGrid projects={projects.filter(p => p.type === 'traditional')} />
+            <ProjectGrid projects={projects.filter(p => p.type.includes('traditional'))} />
           </TabsContent>
         </Tabs>
       </div>
@@ -91,7 +114,7 @@ const ProjectGrid = ({ projects }: { projects: Project[] }) => {
                 <Link size={20} />
               </a>
             </div>
-            <span className="text-xs text-white/50">{project.type}</span>
+            <span className="text-xs text-white/50 gap-2">{project.type}</span>
           </CardFooter>
         </Card>
       ))}
