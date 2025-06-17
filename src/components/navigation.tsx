@@ -40,7 +40,7 @@ function Navigation() {
                     <div className="flex items-center gap-4">
                         <NavbarButton 
                         variant="secondary" 
-                        href="https://drive.google.com/file/d/17gSjO5w9dx_HtpuLPo_GPnDahevAJaTP/view?usp=sharing"
+                        href="https://drive.google.com/file/d/1g6LDMLB5YSiCQ7WtC_ht90XlugVsgM3a/view?usp=sharing"
                         target="_blank"
                         rel="noopener noreferrer">
                             Resume
